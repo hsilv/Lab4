@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="av_udpate">Actualización disponible</string>
+    <string name="download">Descargar</string>
+    <string name="day_of_birth">Domingo</string>
+    <string name="update">Actualizar</string>
+    <string name="drive_to">Conducir a</string>
+    <string name="place_dir">12 Calle 2-51, Zona 9, Ciudad de Guatemala</string>
+    <string name="place_hour">12:00 - 21:00</string>
+    <string name="date_of_birth">20 de Marzo</string>
+    <string name="place_name">Taquería El Loco</string>
+    <string name="start">Iniciar</string>
+    <string name="details">Detalles</string>
+    <string name="finish">Terminar Jornada</string>
+</resources>
