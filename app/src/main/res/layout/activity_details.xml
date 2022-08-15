@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+    <Space
+        android:id="@+id/top_space_start"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Space
+        android:id="@+id/top_space_end"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/place_name_text"
+        android:layout_marginStart="15dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/top_space_start"
+        app:layout_constraintTop_toBottomOf="@id/top_space_start" />
+    <TextView
+        android:id="@+id/place_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_of_birth"
+        app:layout_constraintStart_toStartOf="@id/place_name"
+        app:layout_constraintTop_toBottomOf="@id/place_name"/>
+    <RelativeLayout
+        android:id="@+id/initiate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/place_address"
+        app:layout_constraintStart_toEndOf="@id/top_space_start"
+        app:layout_constraintEnd_toEndOf="@id/top_space_end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp">
+
+        <Button
+            android:id="@+id/button_initiate_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="@string/initiate_visit" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/place_photo"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:src="@drawable/foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/initiate_layout"
+        android:contentDescription="@string/picture_of_the_place" />
+    <TextView
+        android:id="@+id/additional_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/place_photo"
+        app:layout_constraintStart_toEndOf="@id/top_space_start"
+        android:text="@string/additional_info"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/access_time_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/access_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toStartOf="@id/additional_info"
+        app:layout_constraintTop_toBottomOf="@id/additional_info"
+        android:contentDescription="@string/schedule_icon_description" />
+
+    <TextView
+        android:id="@+id/schedule_title_text"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/schedule_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/access_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/additional_info"/>
+
+    <TextView
+        android:id="@+id/schedule_info"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/place_contact_schedule"
+        app:layout_constraintStart_toEndOf="@id/access_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/schedule_title_text"/>
+
+    <ImageView
+        android:id="@+id/call_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/call_icon"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toStartOf="@id/additional_info"
+        app:layout_constraintTop_toBottomOf="@id/schedule_info"
+        android:contentDescription="@string/call_icon_description" />
+
+    <TextView
+        android:id="@+id/contact_info_title"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/place_contact_text"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/call_icon"
+        app:layout_constraintTop_toBottomOf="@id/schedule_info"/>
+
+    <TextView
+        android:id="@+id/contact_info"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="6dp"
+        android:text="@string/place_phone_number"
+        app:layout_constraintStart_toEndOf="@id/call_icon"
+        app:layout_constraintTop_toBottomOf="@id/contact_info_title"/>
+    <Button
+        android:id="@+id/button_call"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/myrect"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/contact_info"
+        app:layout_constraintEnd_toStartOf="@id/top_space_end"
+        android:text="@string/call_button_text"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_marginEnd="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

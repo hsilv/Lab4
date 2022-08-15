@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
+            android:id="@+id/button_refresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/history_button_margin"
@@ -39,15 +39,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
-        <TextView
+        <Button
+            android:id="@+id/button_download"
+            android:background="@drawable/myrect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|end"
             android:layout_marginStart="@dimen/download_margin"
             android:layout_marginEnd="@dimen/download_margin"
             android:text="@string/download"
-            android:textColor="@color/dark_soft_brown"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="10sp"
+            style="?android:attr/buttonBarButtonStyle" />
     </LinearLayout>
 
     <TextView
@@ -92,15 +95,17 @@
             app:layout_constraintStart_toStartOf="@id/L2"
             app:layout_constraintTop_toTopOf="@id/L2" />
 
-        <ImageView
-            android:id="@+id/drive_icon"
+        <ImageButton
+            android:id="@+id/button_drive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
+            android:background="@color/white"
             android:contentDescription="@string/drive_to"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:src="@drawable/drive_icon"
             app:layout_constraintEnd_toEndOf="@id/L2"
-            app:layout_constraintTop_toTopOf="@id/interesting_place" />
+            app:layout_constraintTop_toTopOf="@id/L2" />
 
         <TextView
             android:id="@+id/interesting_place_dir"
@@ -123,19 +128,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
-            app:layout_constraintEnd_toEndOf="@id/drive_icon"
+            app:layout_constraintEnd_toEndOf="@id/button_drive"
             app:layout_constraintStart_toStartOf="@id/interesting_place_hour"
             app:layout_constraintTop_toBottomOf="@id/interesting_place_hour">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_initiate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/start" />
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/button_details"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -147,7 +152,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"

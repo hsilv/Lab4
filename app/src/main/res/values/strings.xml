@@ -12,4 +12,15 @@
     <string name="start">Iniciar</string>
     <string name="details">Detalles</string>
     <string name="finish">Terminar Jornada</string>
+    <string name="initiate_visit">Iniciar Visita</string>
+    <string name="schedule_title">Horario de atención</string>
+    <string name="picture_of_the_place">Foto del lugar</string>
+    <string name="additional_info">Información Adicional</string>
+    <string name="call_button_text">Llamar</string>
+    <string name="place_phone_number">2323-1524</string>
+    <string name="place_contact_text">Teléfono</string>
+    <string name="place_contact_schedule">8:00AM - 5:00PM</string>
+    <string name="place_name_text">Taquería El Loco</string>
+    <string name="schedule_icon_description">Schedule_Icon</string>
+    <string name="call_icon_description">Call Icon</string>
 </resources>
