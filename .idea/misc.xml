@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1245" />
+        <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable/access_time.xml" value="0.176" />
         <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable/button_shape.xml" value="0.1245" />
+        <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable/call_icon.xml" value="0.176" />
         <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable/drive_icon.xml" value="0.1245" />
         <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable/history_icon.xml" value="0.2105" />
         <entry key="..\:/AndroidStudioProjects/CursoLayout/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.1765" />

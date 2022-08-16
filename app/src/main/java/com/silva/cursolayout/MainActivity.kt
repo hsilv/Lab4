@@ -11,14 +11,14 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var initiateButton: Button
-    lateinit var detailsButton: Button
-    lateinit var driveButton: ImageButton
-    lateinit var downloadButton: Button
-    lateinit var placeName: TextView
-    lateinit var placeAddress: TextView
-    lateinit var placeSchedule: TextView
-    lateinit var placeInfo: Place
+    private lateinit var initiateButton: Button
+    private lateinit var detailsButton: Button
+    private lateinit var driveButton: ImageButton
+    private lateinit var downloadButton: Button
+    private lateinit var placeName: TextView
+    private lateinit var placeAddress: TextView
+    private lateinit var placeSchedule: TextView
+    private lateinit var placeInfo: Place
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +30,13 @@ class MainActivity : AppCompatActivity() {
         placeName = findViewById(R.id.interesting_place)
         placeAddress = findViewById(R.id.interesting_place_dir)
         placeSchedule = findViewById(R.id.interesting_place_hour)
-        placeInfo = Place(placeName.text.toString(), placeSchedule.text.toString(), "4653 6282", placeAddress.text.toString())
+        placeInfo = Place(placeName.text.toString(), placeSchedule.text.toString(), "4653-6282", placeAddress.text.toString())
 
 
         initListeners()
     }
 
-    fun initListeners(){
+    private fun initListeners(){
         initiateButton.setOnClickListener {
             val nombre = "Herber Sebastian Silva Muñoz"
             val toast = Toast.makeText(this, nombre, Toast.LENGTH_SHORT)
